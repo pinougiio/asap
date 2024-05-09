@@ -5,12 +5,12 @@
       <VList v-if="agents"
       lines="two">
         <v-list-item 
-        v-for="(agent, index) in agents.list" 
-        :key="index"
-        :title="agent.name"
-        :subtitle="'last connection : '+agent.last_con + ' Create_date : '+ agent.CreatedAt"
-        :value="index"
-        prepend-icon="mdi-cellphone">
+          v-for="(agent, index) in agents.list" 
+          :key="index"
+          :title="agent.name"
+          :subtitle="'last connection : '+agent.last_con + ' Create_date : '+ agent.CreatedAt"
+          :value="index"
+          prepend-icon="mdi-cellphone">
         </v-list-item>
       </VList>
     </v-card>
