@@ -20,7 +20,7 @@
 <script setup>
 import store from '@/store';
 import { computed, onMounted } from 'vue';
-  
+
 const refresh =() => {
   store.dispatch('GetAgentList')
 }
